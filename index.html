@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- I have added meta tags also -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- I have used font-awesome for adding icons -->
+    <script src="https://kit.fontawesome.com/237f4a12f8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- I have put another div as background-container id so that i can give background-color , 
+     i can add border and it will look good -->
+    <div id="background-container">
+    <div id="container">
+        <!-- for user input -->
+        <div id="input">
+            <!-- i have added icons using font-awesome -->
+            <i class="fa-solid fa-paintbrush" style="position: relative;top:1px;left:6px"></i>
+            <input placeholder="Type to add your todo list" id="a">
+            <i class="fa-solid fa-plus" id="b"></i>
+        </div>
+        <!-- font-awesome -->
+        <i class="fa-solid fa-check-double" style="margin-left: 36px;margin-top: 5px;"></i>Completed Tasks
+        <span id="complete">Clear Completed</span>
+        <!-- here we will add todo list-->
+        <ul id="c">
+           
+        </ul>
+        <!--  total no. of tasks left in the list -->
+        <span id="total-tasks">Total tasks: <span id="tasks-counter">0</span></span>
+    </div>
+    </div>
+     
+    <!-- I always add script tag at last of the body -->
+    <script src="logic.js"></script>
+</body>
+</html>
